@@ -1,0 +1,121 @@
+/* Style the container with class 'vc_tta-container' */
+body {
+    align-items: center;
+    width: 100%;
+    margin: 0; /* Reset body margin to eliminate any default margin */
+    display: flex;
+    flex-wrap: wrap;
+    color: #cfe8fe;
+    
+}
+
+.ot_custom_heading{
+    border-bottom: 2px solid black;
+    background-color: rgb(255, 167, 167);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.vc_tta-panel-body{
+    border: 2px solid black;
+}
+
+.wpb_column:hover, .ot_custom_heading:active{
+    background-color:  rgb(0, 187, 255);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.wpb_column {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 33.2%; /* Set each column to 33.33% for three equal columns */
+    margin: 1px;
+    background-color: rgb(255, 167, 167);
+    padding: 10px; /* Add padding to each column */
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* ... (rest of your CSS styles) */
+
+
+
+/* Base styles for the panel container */
+.wpb-column {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    flex: 0 0 30%; /* Set column width for larger screens */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the accordion panels for all screen sizes */
+  .vc_tta-panel {
+    background-color: #cfe8fe;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Style the panel headings for all screen sizes */
+  .vc_tta-panel-heading {
+    background-color: rgb(0, 187, 255);
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the panel titles for all screen sizes */
+  .vc_tta-title-text {
+    font-weight: bold;
+  }
+  
+  /* Style the panel icons for all screen sizes */
+  .vc_tta-controls-icon {
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  /* Style the panel icons when active (expanded) for all screen sizes */
+  .vc_tta-panel.active .vc_tta-controls-icon {
+    transform: rotate(45deg);
+  }
+  
+  /* Style the list items within the panels for all screen sizes */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Style the strong elements within list items for all screen sizes */
+  li strong {
+    font-weight: bold;
+  }
+  
+  /* Style the orange text within list items for all screen sizes */
+  li strong.orange {
+    color: rgb(0, 124, 196);
+  }
+  
+  /* Media query to make columns full width for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    /* Reset some default styles */
+    .wpb_column {
+        font-family: Arial, sans-serif;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        width: 100%; /* Set each column to 33.33% for three equal columns */
+        margin: 1px;
+        background-color: rgb(255, 167, 167);
+        padding: 10px; /* Add padding to each column */
+        border: 2px solid rgb(0, 0, 0);
+    }
+  
+  }
